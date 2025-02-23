@@ -1,0 +1,22 @@
+{
+  "name": "generator",
+  "scripts": {
+    "test": "vitest",
+    "test:lint": "eslint . --ext=.ts --max-warnings=0 --format=compact",
+    "test:format": "prettier '.' '../data' --check",
+    "generate": "tsc && node ./dist/generator/src/index.js"
+  },
+  "dependencies": {
+    "zod": "3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.5.7",
+    "eslint": "8.48.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-config-xo": "0.43.1",
+    "eslint-config-xo-typescript": "1.0.1",
+    "prettier": "3.0.2",
+    "typescript": "5.2.2",
+    "vitest": "0.34.3"
+  }
+}
